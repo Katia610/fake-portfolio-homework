@@ -118,3 +118,18 @@ section {
   display: flex;
   justify-content: start;
 }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .homepage-photo {
+    display: none;
+  }
+  .navbar-name {
+    font-size: 1.1rem;
+  }
+}
