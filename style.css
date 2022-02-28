@@ -9,8 +9,8 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h3,
+.greeting {
   text-align: center;
   margin: 0;
 }
@@ -97,7 +97,7 @@ section {
 .application-links {
   display: flex;
   margin-top: 40px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 60px;
 }
 
@@ -115,8 +115,15 @@ section {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-  display: flex;
-  justify-content: start;
+}
+.row {
+  margin-bottom: 50px;
+}
+.contact-section {
+  text-align: center;
+}
+#contact {
+  padding-bottom: 70px;
 }
 
 @media (max-width: 576px) {
@@ -126,10 +133,48 @@ section {
   h2 {
     font-size: 30px;
   }
+  p {
+    margin: 10px 10px 30px;
+  }
   .homepage-photo {
     display: none;
   }
   .navbar-name {
     font-size: 1.1rem;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .row {
+    margin-bottom: 0px;
+  }
+  .yoga-app-link,
+  .weather-app-link,
+  .yogurt-app-link {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  .application-links a {
+    margin: 20px 15px;
+    padding: 19px 50px;
+    display: inline;
+    text-align: center;
+  }
+  .section-text {
+    text-align: center;
+  }
+  .email-link {
+    font-size: 20px;
+  }
+  .contact-section {
+    text-align: center;
+    font-size: 32px;
+  }
+  .app-section {
+    padding-bottom: 30px;
+  }
+  .about-description {
+    padding: 8px 20px;
   }
 }
